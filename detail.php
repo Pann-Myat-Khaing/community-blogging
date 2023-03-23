@@ -5,9 +5,6 @@
     }else{
         $slug = $_GET['slug'];
         $article=Article::detail($slug);
-        
-        // echo "<pre>";
-        // print_r($article);
     }
 ?>
 
@@ -209,21 +206,15 @@
                                 like.classList.add('fas');
                                 like.classList.add('text-danger');
                                 toastr.success("success");
-                                // location.reload();
+
                         }
                         else{
-                                // console.log(res.data);
-                                // if(res.data == "like Removed"){
                                         res.data=res.data.substr(13);
                                         like_count.innerHTML= res.data;
                                         like.classList.remove('fas');
                                         like.classList.remove('text-danger'); 
                                         like.classList.add('far');
                                         like.classList.add('text-white');  
-                                        // location.reload();
-                                // }
-                                // console.log(res.data);
-                                // toastr.warning(res.data);
                         }
                 })
                 }
