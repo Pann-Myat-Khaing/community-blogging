@@ -1,0 +1,53 @@
+# user
+
+id
+name
+email
+password
+image(null)
+
+# languages
+
+id
+slug
+name(php)
+
+# category
+
+id
+slug
+name
+
+# articles
+
+id
+slug
+title
+image
+category_id
+user_id
+
+# article_language
+
+article_id
+language_id
+
+# articles_likes
+
+user_id
+article_id
+
+<div class='card-dark mt-1'>
+    <div class='card-body'>
+        <div class='row'>
+            <div class='col-md-1'>
+                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXg70J8td4HQA6_zLYKYDaFWpSeGMjT-fSng&usqp=CAU' style='width:50p height:50px; object-fit:cover; border-radius:50%' alt=''>
+            </div>
+            <div class='col-md-4 d-flex align-items-center'>
+                <?php echo $comment_owner['name'];?>
+            </div>
+        </div>
+<hr>
+    <p><?php echo $comment->comment;?></p>
+    </div>
+</div>
