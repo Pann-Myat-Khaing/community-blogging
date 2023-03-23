@@ -1,7 +1,7 @@
 <?php
     require_once "core/autoload.php";
     ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
-    ob_start();//header ko html tag dwe nk yww yay ml so must need dude
+    ob_start();//
     
 
 ?>
