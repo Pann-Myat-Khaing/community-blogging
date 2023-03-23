@@ -157,10 +157,5 @@ class Database
        
     }
 }
-
-// $articles = Database::table('articles')->paginate(2,"category=hi");
-// print_r($articles);
-// print_r($articles);
-
 ?>
 
