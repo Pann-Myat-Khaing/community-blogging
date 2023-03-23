@@ -67,10 +67,5 @@
             ";
             }
         }
-        echo count($cmt);
-        // $data = array(count($cmt),$html);
-        // $data = ['count'=> count($cmt),'comment'=>$html];
-        // $data = array_map('trim',$data);
-        print_r($html);
     }
-    }
+}
